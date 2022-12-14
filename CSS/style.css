@@ -1,0 +1,293 @@
+body {
+    background-color: #FFF;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.itens_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#logo {
+    float: left;
+    display: flex;
+    justify-content: left;
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: initial;
+    gap: 20px;
+}
+
+nav li {
+    list-style: none;
+}
+
+li::marker {
+    text-decoration: none;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.historia {
+    display: flex;
+    flex-direction: row;
+}
+
+.dona {
+    height: 600px;
+    width: 400px;
+    margin-left: 70px;
+}
+
+#texto {
+    display: flex;
+    align-items: center;
+    margin-top: 88px;
+    width: 600px;
+}
+
+.descricao {
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.flip-servico {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-servico .flip-card {
+    overflow-x: auto;
+}
+
+.flip-servico:hover .flip-card {
+    overflow-y: auto;
+}
+
+.flip-frente .descricao-servico {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+}
+
+.flip-frente {
+    background-image: linear-gradient(45deg, #6a1b60, #222222);
+}
+
+.titulo {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.descricao-servico {
+    background-image: linear-gradient(45deg, #6a1b60, #222222);
+    color: #FFF;
+    transform: rotateY(180deg);
+}
+
+.studio {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.foto_salao {
+    display: flex;
+}
+
+.mostra {
+    width: 550px;
+    height: 550px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+strong {
+    display: flex;
+    margin-top: 9px;
+    margin-right: 10px;
+}
+################ Galeria ##################
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_galeria {
+    font-size: 28px;
+    text-decoration: underline;
+    color: #6a1b60;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card {
+    width: 320px;
+    height: 240px;
+    border-top: 1px solid #6a1b60;
+    border-left: 1px solid #6a1b60;
+    border-right: 1px solid #6a1b60;
+    border-bottom: 1px solid #6a1b60;
+    margin-bottom: 10px;
+}
+
+.foto {
+    width: 320px;
+    height: 240px;
+}
+################## Agendamento -----------------
+
+main .principal {
+
+}
+
+.agenda {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 500px;
+    height: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    padding-top: 60px;
+    padding-left: 5px;
+}
+
+label{
+    color: #6a1b60;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.localizacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 650px;
+    height: 630px;
+}
+
+.endereco {
+    color: #6a1b60;
+}
+
+################## Videos ------------------
+
+.container_video {
+
+}
+
+.card_video {
+    display: flex;
+    width: 450px;
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+video {
+    height: 450px;
+    width: 450px;
+}
+
+------------------------- Administração --------------------------------
+
+.admin {
+
+}
+
+.tela {
+
+}
+
+#tela_admin {
+
+}
+
+------------------------- Index_adm --------------------------------
+
+.conteudo {
+	
+}
+
+.saudacao {
+	color: #6a1b60;
+}
+
+table {
+	display: flex;
+	justify-content: center;
+	padding-top: 120px;
+}
+
+tr, th, td {
+	display: revert;
+	border-top: 1px solid #6a1b60;
+	border-left: 1px solid #6a1b60;
+	border-right: 1px solid #6a1b60;
+	border-bottom: 1px solid #6a1b60;
+}
+
+------------------------- Editar dados --------------------------------
+
+.edit_feito {
+	
+}
